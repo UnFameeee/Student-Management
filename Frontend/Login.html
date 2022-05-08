@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="./assets/css/login.css" />
+    </head>
+
+    <body>
+        <div class="center">
+            <h1>Login</h1>
+            <form autocomplete="off">
+                <div class="txt_field">
+                    <input type="text" id="id_user" required />
+                    <span></span>
+                    <label for="">Username</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" id="id_pass" required />
+                    <span></span>
+                    <label for="">Password</label>
+                </div>
+
+                <div class="btn_field">
+                    <input type="radio" name="role" value="teacher" checked />
+                    <label for="teacher">Teacher</label>
+                    <input type="radio" name="role" value="student" />
+                    <label for="student">Student</label>
+                    <input type="radio" name="role" value="admin" />
+                    <label for="admin">Admin</label>
+                </div>
+
+                <!-- <div class="pass">Forgot Password?</div> -->
+                <input type="submit" id="btn_login" value="Login" />
+                <div class="signup_link">
+                    <!-- Not a member? <a href="Register.html">Sign up</a> -->
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
+<script type="module" src="./assets/scripts/Login.js"></script>

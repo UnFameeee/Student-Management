@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+        <title>Add Students</title>
+    </head>
+
+    <body>
+        <div id="main">
+            <div id="header">
+                <div class="header-left">
+                    <a href="Dashboard.html" class="logo">
+                        <i class="icon ri-book-2-fill"></i>
+                        <span>Student</span>
+                    </a>
+                </div>
+                <div class="header-right">
+                    <div class="level-left">
+                        <button class="btn btn-menu">
+                            <i class="icon ri-menu-2-fill"></i>
+                        </button>
+                        <form class="header-search">
+                            <input type="text" class="input-search" placeholder="Search here" />
+                            <button class="btn btn-search">
+                                <i class="ri-search-line"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="level-right">
+                        <ul class="nav">
+                            <li class="btn nav-items nav-notification">
+                                <i class="ri-notification-3-line"></i>
+                            </li>
+                            <li class="btn nav-items nav-user">
+                                <!-- <img src="" alt=""> -->
+                                <i class="ri-user-3-line"></i>
+                                <i class="menu-arrow ri-arrow-down-s-line"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="sidebar">
+                <div class="sibebar-scroll">
+                    <ul>
+                        <li class="menu-title">
+                            <span>Main Menu</span>
+                        </li>
+                        <li class="main-menu">
+                            <div>
+                                <i class="ri-contacts-book-2-line"></i>
+                                <span>Dashboard</span>
+                                <i class="menu-arrow ri-arrow-down-s-line"></i>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><a href="Dashboard.html">Admin Dashboard</a></li>
+                                <li><a href="">Teacher Dashboard</a></li>
+                                <li><a href="">Student Dashboard</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-menu">
+                            <div>
+                                <i class="ri-contacts-book-2-line"></i>
+                                <a href="Translate.html">Translate</a>
+                            </div>
+                        </li>
+                        <li class="main-menu">
+                            <div>
+                                <i class="ri-contacts-book-2-line"></i>
+                                <span>Students</span>
+                                <i class="menu-arrow ri-arrow-down-s-line"></i>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><a href="ListStudents.html">Student List</a></li>
+                                <li><a href="">Student View</a></li>
+                                <li><a href="ProfileStudent.html">Student Profile</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-menu">
+                            <div>
+                                <i class="ri-contacts-book-2-line"></i>
+                                <span>Teachers</span>
+                                <i class="menu-arrow ri-arrow-down-s-line"></i>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><a href="ListTeachers.html">Teacher List</a></li>
+                                <li><a href="">Teacher View</a></li>
+                                <li><a href="ProfileTeacher.html">Teacher Profile</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-menu">
+                            <div>
+                                <i class="ri-contacts-book-2-line"></i>
+                                <span>Courses</span>
+                                <i class="menu-arrow ri-arrow-down-s-line"></i>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><a href="ListCourses.html">Course List</a></li>
+                                <li><a href="ProfileCourse.html">Course Profile</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="container">
+                <div class="page-header">
+                    <div class="col">
+                        <h3 class="page-title">List Courses</h3>
+                        <ul class="breadcrumb">
+                            <input type="hidden" value="course" />
+                            <li class="breadcrumb-items">Courses/</li>
+                            <li class="breadcrumb-items">List Courses</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-body">
+                    <div class="row">
+                        <h3 class="form-title">Show Courses</h3>
+                        <table>
+                            <tr>
+                                <th>Course ID</th>
+                                <th>Course Name</th>
+                                <th>Teacher ID</th>
+                                <th>Actions</th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <span>Copyright © </span>
+            </div>
+        </div>
+        <div id="form-edit">
+            <div class="edit-container">
+                <form action="" class="row">
+                    <div class="form-close">
+                        <i class="ri-close-fill"></i>
+                    </div>
+                    <h3 class="form-title">EDIT INFORMATION</h3>
+                    <div class="col-half form-group">
+                        <label for="" class="form-label">Course ID</label>
+                        <input type="text" name="" id="" class="form-input" />
+                    </div>
+                    <div class="col-half form-group">
+                        <label for="" class="form-label">Course Name</label>
+                        <input type="text" name="" id="" class="form-input" />
+                    </div>
+                    <div class="col-half form-group">
+                        <label for="" class="form-label">Class</label>
+                        <input type="text" name="" id="" class="form-input" />
+                    </div>
+                    <div class="col-half form-group">
+                        <label for="" class="form-label">Teacher ID</label>
+                        <input type="text" name="" id="" class="form-input" />
+                    </div>
+                    <div class="col">
+                        <button type="submit" class="btn btn-submit">Submit</button>
+                        <button class="btn btn-reset">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <script type="module" src="./assets/scripts/main.js"></script>
+        <script type="module" src="./assets/scripts/ListContent.js"></script>
+        <script type="module" src="./assets/scripts/EditContent.js"></script>
+    </body>
+</html>
